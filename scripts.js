@@ -1,15 +1,15 @@
 const arrayOfAndis = [
   {
     name: "Ivan",
-    title: "Some title 1"
+    title: "Some title"
   },
   {
     name: "Ivan",
-    title: "Some title 2"
+    title: "Some title"
   },
   {
     name: "Ivan",
-    title: "Some title 3"
+    title: "Some title"
   }
 ]
 
