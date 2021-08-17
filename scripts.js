@@ -4,11 +4,11 @@ const arrayOfAndis = [
     title: "Some title 1"
   },
   {
-    name: "Ivan",
+    name: "Omri",
     title: "Some title 2"
   },
   {
-    name: "Ivan",
+    name: "Michal",
     title: "Some title 3"
   }
 ]
