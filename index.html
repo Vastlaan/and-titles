@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
   </head>
   <body>
     <div
@@ -14,7 +14,22 @@
     >
       ..
     </div>
-
+    <form
+      action="https://us-central1-and-business-card.cloudfunctions.net/add"
+      method="POST"
+      class="form"
+      id="form"
+    >
+      <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required />
+      </div>
+      <div class="field">
+        <label for="title">Title:</label>
+        <input type="text" name="title" required />
+      </div>
+      <button class="btn">Submit</button>
+    </form>
     <div id="root"></div>
     <script type="text/javascript" src="scripts.js"></script>
   </body>
