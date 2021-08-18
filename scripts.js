@@ -31,3 +31,14 @@ async function renderCards(){
 }
 
 renderCards()
+
+const form = document.querySelector('#form')
+form.addEventListener('submit', submitForm)
+
+async function submitForm(){
+
+  const response = await fetch('https://us-central1-and-business-card.cloudfunctions.net/add', {
+    method: "POST",
+    
+  })
+}
