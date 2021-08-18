@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <title>Document</title>
+  
 </head>
 <body>
-  <form action='https://us-central1-and-business-card.cloudfunctions.net/add' method="POST" class='form' id="form">
+  <div
+      className=""
+      style="background-image: url('AND.jpeg'); width: 100%; height: 200px"
+    >
+      ..
+  </div>
+  <form method="POST" class='form' id="form">
     <div class="field">
       <label for="name">Name:</label>
-      <input type="text" name='name' required>
+      <input id="name_field" type="text" name='name' required>
     </div>
     <div class="field">
       <label for="title">Title:</label>
-      <input type="text" name='title' required>
+      <input id="title_field" type="text" name='title' required>
     </div>
     <button class="btn">Submit</button>
   </form>
