@@ -23,8 +23,6 @@ async function renderCards() {
     existingCards.remove();
   }
 
-  const cards = document.createElement('div')
-  cards.id='cards'
   root.appendChild(cards);
 }
 
