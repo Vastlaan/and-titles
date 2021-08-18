@@ -23,6 +23,20 @@ async function renderCards() {
     existingCards.remove();
   }
 
+  data.map(andi=>{
+    const name = document.createElement('div')
+    name.innerHTML = andi.name
+    name.className = 'name'
+    const title = document.createElement('div')
+    title.innerHTML = andi.title
+    title.className = 'title'
+    const card = document.createElement('div')
+    card.className = 'card'
+    card.appendChild(name)
+    card.appendChild(title)
+    cards.appendChild(card)
+  })
+
   root.appendChild(cards);
 }
 
@@ -48,3 +62,7 @@ async function submitForm(event){
 
   renderCards();
 }
+
+// attach event listener to form
+const form = document.querySelector('#form')
+form.addEventListener('submit', submitForm)
