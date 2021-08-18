@@ -43,7 +43,7 @@ form.addEventListener('submit', submitForm)
 
 async function submitForm(event){
   event.preventDefault();
-  
+
   const name = document.getElementById("name_field").value;
   const title = document.getElementById("title_field").value;
 
@@ -52,7 +52,7 @@ async function submitForm(event){
   const response = await fetch('https://us-central1-and-business-card.cloudfunctions.net/add', {
     method: "POST",
     headers: {
-      "Content-Type": "multipart/form-data"
+      "Content-Type": "application/x-www-form-urlencoded"
     },
     body: `name=${name}&title=${title}`
   });
